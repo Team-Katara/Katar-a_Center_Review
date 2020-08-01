@@ -11,6 +11,4 @@ describe('Test the API endpoint', () => {
         done();
       });
   });
-
-  // implement post request test here
 });

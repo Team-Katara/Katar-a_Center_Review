@@ -9,7 +9,6 @@ import Adapter from 'enzyme-adapter-react-16';
 import App from '../../client/src/components/App.jsx';
 import Foo from './foo.jsx';
 
-// const fetch = require('node-fetch');
 const fetch = require('jest-fetch-mock');
 configure({ adapter: new Adapter() });
 

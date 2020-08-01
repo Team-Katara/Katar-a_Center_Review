@@ -27,14 +27,12 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // invoke get request func
     this.getComments();
   }
 
   // get request to server
   getComments() {
     const queryID = this.getQueries();
-    // `http://localhost:3001/api/reviews?id=${queryID}`
     fetch(`http://localhost:3004/api/reviews?id=${queryID}`, {
       headers: {
         'Content-Type': 'application/json',
@@ -66,9 +64,7 @@ class App extends React.Component {
     })
       .then(res => res.json())
       .then(result => {
-        // console.log(result);
         this.getComments();
-        // console.log(this.state.reviews);
       })
       .catch(err => {
         console.log('Error making PATCH request', err);
@@ -116,9 +112,7 @@ class App extends React.Component {
     const newFirst = this.state.firstComment - 5;
     const newLast = newFirst + 4;
 
-    // if last comment + 5 < limit
     if (this.state.firstComment - 5 > 1) {
-      // update lastComment, pageReview, firstComment
       this.setState({
         next: true,
         firstComment: newFirst,
@@ -126,7 +120,6 @@ class App extends React.Component {
         pageReview: fullReviews.slice(newFirst, newLast + 1)
       });
     } else {
-    // else update next = false, pageReview (lastComment + 1 to limit),
       this.setState({
         prev: false,
         firstComment: 1,
@@ -141,9 +134,7 @@ class App extends React.Component {
     const newFirst = this.state.firstComment + 5;
     const newLast = this.state.lastComment + 5;
 
-    // if last comment + 5 < limit
     if (this.state.lastComment + 5 < fullReviews.length) {
-      // update lastComment, pageReview, firstComment
       this.setState({
         prev: true,
         firstComment: newFirst,
@@ -151,7 +142,6 @@ class App extends React.Component {
         pageReview: fullReviews.slice(newFirst, newLast + 1),
       });
     } else {
-    // else update next = false, pageReview (lastComment + 1 to limit),
       this.setState({
         next: false,
         firstComment: newFirst,
@@ -177,12 +167,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-
-// Pagination Idea :
-
-// - refactor the db
-
-// https://medium.com/how-to-react/create-pagination-in-reactjs-e4326c1b9855
-
-// https://www.youtube.com/watch?v=IYCa1F-OWmk

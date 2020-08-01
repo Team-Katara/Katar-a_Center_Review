@@ -14,7 +14,6 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../client/public')));
 
 app.get('/api/reviews', function(req, res) {
-  // console.log(req.query);
   const id = req.query.id;
   Review.find({ id })
     .exec((err, result) => {
