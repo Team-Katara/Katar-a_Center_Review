@@ -11,17 +11,16 @@ jobs:
       tag: '10.20.1'
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
+      - run: npm install
   test:
     steps:
       - checkout
       - run: npm test
+
 workflows:
-  build-and-test:
+  build_and_test:
     jobs:
       - build
       - test:
-        requires:
-          - build
+          requires:
+            - build
