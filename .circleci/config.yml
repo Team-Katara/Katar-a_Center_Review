@@ -4,8 +4,10 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.20.1
-
+      - image: circleci/mongo:4.13.20
     steps:
       - checkout
-      - run: npm install
+      - node/with-cache:
+        steps:
+          - run: npm install
       - run: npm test
