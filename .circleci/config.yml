@@ -11,9 +11,7 @@ jobs:
       - image: circleci/node:10.20.1
     steps:
       - checkout
-      - node/with-cache:
-        steps:
-          - run: npm install
+      - run: npm install
       - run: npm test
 
 workflows:
