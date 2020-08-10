@@ -11,4 +11,14 @@ describe('Test the API endpoint', () => {
         done();
       });
   });
+
+  test('It should respond with status 200 from GET method on sucess', (done) => {
+    return request(app)
+      .get('/api/reviews?id=2')
+      .then(response => {
+        expect(response.status).not.toBe(400);
+        done();
+      });
+  });
+
 });
