@@ -1,20 +1,20 @@
 version: 2.1
-
 orbs:
   node: circleci/node@1.1.6
-
 jobs:
   build-and-test:
+    docker:
+      - image: circleci/node
+      - image: circleci/mongo:3.6.3
     executor:
       name: node/default
-    docker:
-      - image: circleci/node:10.20.1
-      - image: circleci/mongo:3.6.3
+      tag: '10.20.1'
     steps:
       - checkout
-      - run: npm install
+      - node/with-cache:
+          steps:
+            - run: npm install
       - run: npm test
-
 workflows:
   build-and-test:
     jobs:
