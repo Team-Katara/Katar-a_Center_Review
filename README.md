@@ -1,6 +1,6 @@
 # Product Reviews
 
-![Project](https://i.imgur.com/M53HGrB.jpg)
+![Project](https://imgur.com/Yd3nyeV.jpg)
 ![Review](https://imgur.com/M53HGrB.jpg)
 
 > Product Reviews module is a clone version of Guitar Center's review module. The review module includes the following:
