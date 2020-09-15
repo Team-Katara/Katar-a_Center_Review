@@ -1,5 +1,8 @@
 # Product Reviews
 
+![Project](https://imgur.com/Yd3nyeV)
+![Review](https://imgur.com/M53HGrB)
+
 > Product Reviews module is a clone version of Guitar Center's review module. The review module includes the following:
 1. Search functionality to filter reviews based on searched keyword.
 1. Review list that displays all reviews.
@@ -63,14 +66,14 @@ Getting reviews for an id : /api/reviews?id={}
   - GET Request
   - Expected Queries: id
   - Responses with randomly generated 14 to 20 reviews
-  
+
 Updating like/dislike : /api/reviews
   - PATCH Request
   - Expected Queries: id
-  - Expected Body: 
+  - Expected Body:
     => _id: Associated _id with an individual review
     => like: like count for an individual review
     => dislike: dislike count for an individual review
-  
-  
+
+
 
