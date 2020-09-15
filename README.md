@@ -3,10 +3,7 @@
 ![Project](https://imgur.com/Yd3nyeV.jpg)
 ![Review](https://imgur.com/M53HGrB.jpg)
 
-![Website GIF](https://imgur.com/j1ERv56.gif)
-
-![gif](http://i.imgur.com/j1ERv56h.gif)
-![gif2](http://imgur.com/j1ERv56h.gif)
+![GIF](https://media.giphy.com/media/htvWrldVLRggkP0P9W/giphy.gif)
 
 > Product Reviews module is a clone version of Guitar Center's review module. The review module includes the following:
 1. Search functionality to filter reviews based on searched keyword.
