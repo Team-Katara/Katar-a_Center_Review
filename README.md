@@ -1,3 +1,18 @@
+<h1 align="center">Welcome to kickstarter-updates-service 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/npm-%3E%3D6.14.5-blue.svg" />
+  <img src="https://img.shields.io/badge/node-%3E%3D12.16.3-blue.svg" />
+  <a href="https://github.com/team-suki/john-service/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/team-iroh/pledge-rewards/blob/master/LICENSE" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/github/license/xApnea/john-service" />
+  </a>
+</p>
+
+> This module is one of 4 services for an e-commerce product page. This module specifically handles the Review Section.
+
 # Product Reviews
 
 ![Project](https://imgur.com/Yd3nyeV.jpg)
