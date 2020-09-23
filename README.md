@@ -13,11 +13,14 @@
 
 > This module is one of 4 services for an e-commerce product page. This module specifically handles the Review Section.
 
-# Product Reviews
 
+> Front Page
 ![Project](https://imgur.com/Yd3nyeV.jpg)
+
+> Review Module
 ![Review](https://imgur.com/M53HGrB.jpg)
 
+> Demo
 ![GIF](https://media.giphy.com/media/htvWrldVLRggkP0P9W/giphy.gif)
 
 > Product Reviews module is a clone version of Guitar Center's review module. The review module includes the following:
